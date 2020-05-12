@@ -6,4 +6,7 @@ jobs:
     runs-on: ubuntu-latest # useful environment to we can run a simple bash    
     steps:
     - name: hello-world
-      run: echo "hello"
+      run: |
+        echo "hello $NAME"
+      env:
+        NAME: Sayak
