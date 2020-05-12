@@ -7,6 +7,4 @@ jobs:
     steps:
     - name: hello-world
       run: |
-        echo "hello $NAME"
-      env:
-        NAME: Sayak
+        echo "hello $GITHUB_ACTOR"
